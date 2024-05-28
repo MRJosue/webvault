@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    /* ... */
+    .title-experiencia{
+      @apply text-start
+    }
+
+    .expcard{
+      @apply transform;
+      @apply transition duration-300 hover:scale-105;
+    }
+
+    .popline{
+      @apply transform;
+      @apply transition duration-300 hover:scale-105;
+    }
+
+    .poppointer{
+      @apply transform;
+      @apply transition duration-300 hover:scale-105;
+      @apply cursor-pointer;
+    }
+
+    .title{
+      @apply text-center;
+      @apply text-xl
+    }
+
+    .br-2.animado{
+      opacity: 0;
+    }
+    .br-1.animado{
+      transform: rotate(45deg) translate(9px 8px) ;
+      transform-origin: 0% 100%;
+    }
+
+    .br-3.animado{
+      transform: rotate(-45deg) translate(-6px 8px) ;
+      transform-origin: 0% 100%;
+    }
+
+    .buttonlg{
+      @apply border-b-2 w-full px-4 py-1 
+      hover:dark:bg-slate-700
+      hover:bg-slate-200
+      focus:bg-slate-200
+      focus:border-sky-500
+      focus:dark:bg-slate-700 
+      lg:border-l-2 
+      lg:border-b-0 
+      lg:h-full 
+      lg:text-left 
+      bg-slate-50
+      dark:bg-slate-900
+
+      transition duration-100
+      ;
+    }
+  }
